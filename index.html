@@ -13,10 +13,12 @@
 		<div class="languages-container">
 			<label for="translateFrom">Traducir del:</label>
 			<select name="" id="translateFrom" class="">
-				<option value="es">Español</option>
+				<option value="es">Elige un idioma</option>
 			</select>
 			<label for="translateTo">Al:</label>
-			<select name="" id="translateTo" class=""></select>
+			<select name="" id="translateTo" class="" value="es">
+				<option value="es">Elige un idioma</option>
+			</select>
 		</div>
 		<div class="result-container">
 			<div class="first-section">
@@ -24,7 +26,7 @@
 				<textarea name="" id="inputTranslate" cols="20" rows="10"></textarea>
 			</div>
 
-			<button>Traducir</button>
+			<button id="translate">Traducir</button>
 
 			<div class="first-section">
 				<label for="outputTranslate">Resultado:</label>
