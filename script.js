@@ -1,3 +1,7 @@
+//Elements DOM
+let translateFrom = document.querySelector('#translateFrom');
+let translateTo = document.querySelector('#translateTo');
+
 //Get the list of languages from the server
 const GET_URL = 'https://text-translator2.p.rapidapi.com/getLanguages';
 
@@ -11,8 +15,13 @@ const OPTIONS = {
 
 fetch(GET_URL, OPTIONS)
 	.then((res) => res.json())
-	.then(
-		(object) => console.log(object)
+	.then((object) => {
+		let languages = object.data.languages;
+		console.log();
 		//Code needed to load the Select
-	)
+		languages.forEach((element) => {
+			translateFrom.innerHTML += `<option value="${element.code}">${element.name}</option>`;
+			translateTo.innerHTML += `<option value="${element.code}">${element.name}</option>`;
+		});
+	})
 	.catch((err) => console.log(err));
