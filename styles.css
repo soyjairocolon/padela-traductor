@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.initial-title {
+	text-align: center;
+}
+
+.subtitle {
+	text-align: center;
+}
+
+.languages-container {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.first-section,
+.second-section {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+
+label {
+	text-align: center;
+}
+
+.result-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
