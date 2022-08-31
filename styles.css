@@ -22,10 +22,36 @@ body {
 }
 
 .subtitle {
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 30px;
+}
+
+span {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: white;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 20ch;
+
+	animation: typing 2s steps(20), blink 0.5s infinite step-end alternate;
+	-webkit-animation: typing 2s steps(20), blink 0.5s infinite step-end alternate;
+	overflow: hidden;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }
 
 .languages-container {
@@ -306,6 +332,12 @@ textarea:hover {
 		margin-bottom: 20px;
 		display: grid;
 		text-align: center;
+	}
+
+	.btn:hover {
+		background: #4d5061;
+		color: white;
+		border: none;
 	}
 
 	.footer-container .team2 {
