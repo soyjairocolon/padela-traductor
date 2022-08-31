@@ -4,35 +4,115 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./Assets/padelaTraductor.png"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/f3dbe00e7f.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="./styles.css" />
 		<title>Padela Traductor</title>
 	</head>
 	<body>
 		<h1 class="initial-title">PADELA TRADUCTOR</h1>
-		<p class="subtitle">Una forma de traducir lo que quieras de forma fácil</p>
+		<p class="subtitle">Traduce lo que quieras de forma fácil</p>
 		<div class="languages-container">
 			<label for="translateFrom">Traducir del:</label>
-			<select name="" id="translateFrom" class="">
+			<select name="" id="translateFrom" class="selectR">
 				<option value="es">Elige un idioma</option>
 			</select>
-			<label for="translateTo">Al:</label>
-			<select name="" id="translateTo" class="" value="es">
-				<option value="es">Elige un idioma</option>
+			<label for="translateTo"> al:</label>
+			<select name="" id="translateTo" class="selectL" value="es">
+				<option value="es">¿A que idioma traduces?</option>
 			</select>
 		</div>
 		<div class="result-container">
 			<div class="first-section">
 				<label for="inputTranslate">Ingresa el texto a traducir:</label>
-				<textarea name="" id="inputTranslate" cols="20" rows="10"></textarea>
+				<textarea name="" id="inputTranslate" cols="40" rows="15"></textarea>
 			</div>
 
-			<button id="translate">Traducir</button>
+			<button class="btn" id="translate">Traducir</button>
 
-			<div class="first-section">
+			<div class="second-section">
 				<label for="outputTranslate">Resultado:</label>
-				<textarea name="" id="outputTranslate" cols="20" rows="10"></textarea>
+				<textarea name="" id="outputTranslate" cols="40" rows="15"></textarea>
 			</div>
 		</div>
+		<footer class="footer-container">
+			<div class="team1">
+				<div class="box">
+					<figure>
+						<a href="/">
+							<img
+								src="./Assets/logo-padela-traductor.png"
+								alt="padelaTraductor"
+							/>
+						</a>
+					</figure>
+				</div>
+				<div class="box">
+					<h2>SOBRE MI</h2>
+					<p>
+						🟡Hola!! Soy un apasionado desarrollador web Full Stack, con
+						conocimientos y experiencia en publicidad, creación de contenido,
+						edición de vídeo. Me adapto a la realización de proyectos de Backend
+						así como también de Frontend. Me gusta aprender, soy muy curioso y
+						me gusta ayudar a los demás, brindar motivación personal y
+						profesional.
+					</p>
+					<p>
+						Algo más de mí es que soy coreógrafo y bailarín, gracias a mis
+						hobbies tengo la habilidad de ser creativo, innovar y buscar formas
+						para solucionar problemas.😀
+					</p>
+				</div>
+				<div class="box">
+					<h2>SÍGUEME</h2>
+					<div class="social-media">
+						<a
+							href="https://twitter.com/jairocolondev"
+							target="_blank"
+							rel="noopener noreferrer"
+							><i class="fa-brands fa-twitter"></i
+						></a>
+						<a
+							href="https://github.com/jairocolondev/"
+							target="_blank"
+							rel="noopener noreferrer"
+							><i class="fa-brands fa-github"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/jairocolondev/"
+							target="_blank"
+							rel="noopener noreferrer"
+							><i class="fa-brands fa-linkedin"></i
+						></a>
+					</div>
+				</div>
+			</div>
+			<div class="team2">
+				<small
+					>&copy; 2022
+					<a
+						href="https://jairocolon.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						><b>Jairo Colón</b></a
+					>
+					- Todos los derechos reservados ®
+				</small>
+			</div>
+		</footer>
 
 		<script src="./script.js"></script>
 	</body>
