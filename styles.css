@@ -233,11 +233,11 @@ textarea:hover {
 	body {
 		box-sizing: border-box;
 		background: #21232c;
-		background-image: url('/Assets/bg-padela-traductor.png');
+		background-image: url('/Assets/bg2-padela-traductor.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
-		height: 300vw;
+		height: 370vw;
 	}
 
 	label {
